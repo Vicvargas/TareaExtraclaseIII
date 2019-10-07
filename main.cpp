@@ -1,13 +1,13 @@
 #include <iostream>
-#include "Sorts/SelectionSortBenchmark.h"
-#include "Sorts/SelectionSortBenchmark.h"
+#include "Sorts/Benchmark.h"
+#include "Sorts/Benchmark.h"
 #include <cstdlib>
 #include <sys/time.h>
 #include <sys/resource.h>
 
 int main() {
 
-    SelectionSortBenchmark *ssb = new SelectionSortBenchmark();
+    Benchmark *ssb = new Benchmark();
 
     return 0;
 }

@@ -13,7 +13,17 @@
 class SelectionSort {
 
 public:
+    /**
+     * Realiza intercambio entre ambos valores
+     * @param xp
+     * @param yp
+     */
     void swap(int *xp, int *yp);
+    /**
+     * Realiza ordenamiento del array
+     * @param arr
+     * @param n
+     */
     void selectionSort(int arr[], int n);
 };
 

@@ -2,10 +2,13 @@
 // Created by josecespedes on 29/9/19.
 //
 
-#ifndef TAREAEXTRACLASE3_SELECTIONSORTBENCHMARK_H
-#define TAREAEXTRACLASE3_SELECTIONSORTBENCHMARK_H
+#ifndef TAREAEXTRACLASE3_BENCHMARK_H
+#define TAREAEXTRACLASE3_BENCHMARK_H
 
 #include "SelectionSort.h"
+#include "InsertionSort.h"
+
+
 #include <iostream>
 #include <cstdlib>
 #include <sys/time.h>
@@ -16,15 +19,15 @@
  * al algoritmo de ordenamiento Selection Sort.
  */
 
-class SelectionSortBenchmark {
+class Benchmark {
 
 public:
     /**
      * Constructor de la clase SelectionSortBenchmark que realiza el benchmark.
      */
-    SelectionSortBenchmark();
+    Benchmark();
 
 };
 
 
-#endif //TAREAEXTRACLASE3_SELECTIONSORTBENCHMARK_H
+#endif //TAREAEXTRACLASE3_BENCHMARK_H
