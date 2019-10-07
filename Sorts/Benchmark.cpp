@@ -3,12 +3,14 @@
 //
 
 #include "Benchmark.h"
+#include "BubbleSort.h"
 
 Benchmark::Benchmark() {
 
     //Definiendo los algoritmos de ordenamiento
     SelectionSort selectionSort;
     InsertionSort insertionSort;
+    BubbleSort bubbleSort;
 
     //Definiendo los distintos arrays
     int selection10[10];
@@ -81,7 +83,7 @@ Benchmark::Benchmark() {
 
     //Benchmark de array con 10 elementos con Bubble Sort
     double antes10_bubble = (float) clock() / CLOCKS_PER_SEC;
-    //bubbleSort.bubbleSort(bubble10, 10);
+    bubbleSort.bubbleSort(bubble10, 10);
     double despues10_bubble = (float) clock() / CLOCKS_PER_SEC;
     double final10_bubble = (despues10_bubble - antes10_bubble);
 
@@ -93,7 +95,7 @@ Benchmark::Benchmark() {
 
     printf("\n\nCon Selection Sort se ha tardado: %f s\n", final10_selection);
     printf("\nCon Insertion Sort se ha tardado: %f s\n", final10_insertion);
-    //printf("\nCon Bubble Sort se ha tardado: %f s\n", final10_bubble);
+    printf("\nCon Bubble Sort se ha tardado: %f s\n", final10_bubble);
 
 
     printf("\n%s\n", "--------------------------------------------------------");
@@ -119,7 +121,7 @@ Benchmark::Benchmark() {
 
     //Benchmark de array con 100 elementos con Bubble Sort
     double antes100_bubble = (float) clock() / CLOCKS_PER_SEC;
-    //bubbleSort.bubbleSort(bubble100, 100);
+    bubbleSort.bubbleSort(bubble100, 100);
     double despues100_bubble = (float) clock() / CLOCKS_PER_SEC;
     double final100_bubble = (despues100_bubble - antes100_bubble);
 
@@ -133,7 +135,7 @@ Benchmark::Benchmark() {
 
     printf("\n\nCon Selection Sort se ha tardado: %f s\n", final100_selection);
     printf("\nCon Insertion Sort se ha tardado: %f s\n", final100_insertion);
-    //printf("\nCon Bubble Sort se ha tardado: %f s\n", final100_bubble);
+    printf("\nCon Bubble Sort se ha tardado: %f s\n", final100_bubble);
 
 
     printf("\n%s\n", "--------------------------------------------------------");
@@ -171,7 +173,7 @@ Benchmark::Benchmark() {
 
     printf("\n\nCon Selection Sort se ha tardado: %f s\n", final1000_selection);
     printf("\nCon Insertion Sort se ha tardado: %f s\n", final1000_insertion);
-    //printf("\nCon Bubble Sort se ha tardado: %f s\n", final1000_bubble);
+    printf("\nCon Bubble Sort se ha tardado: %f s\n", final1000_bubble);
 
 
     printf("\n%s\n", "--------------------------------------------------------");
@@ -198,7 +200,7 @@ Benchmark::Benchmark() {
 
     //Benchmark de array con 10000 elementos con Bubble Sort
     double antes10000_bubble = (float) clock() / CLOCKS_PER_SEC;
-    //bubbleSort.bubbleSort(bubble10000, 10000);
+    bubbleSort.bubbleSort(bubble10000, 10000);
     double despues10000_bubble = (float) clock() / CLOCKS_PER_SEC;
     double final10000_bubble = (despues10000_bubble - antes10000_bubble);
 
@@ -211,5 +213,5 @@ Benchmark::Benchmark() {
 
     printf("\n\nCon Selection Sort se ha tardado: %f s\n", final10000_selection);
     printf("\nCon Insertion Sort se ha tardado: %f s\n", final10000_insertion);
-    //printf("\nCon Bubble Sort se ha tardado: %f s\n", final10000_bubble);
+    printf("\nCon Bubble Sort se ha tardado: %f s\n", final10000_bubble);
 }
