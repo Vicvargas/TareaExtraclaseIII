@@ -161,7 +161,7 @@ Benchmark::Benchmark() {
 
     //Benchmark de array con 1000 elementos con Bubble Sort
     double antes1000_bubble = (float) clock() / CLOCKS_PER_SEC;
-    //bubbleSort.bubbleSort(bubble1000, 1000);
+    bubbleSort.bubbleSort(bubble1000, 1000);
     double despues1000_bubble = (float) clock() / CLOCKS_PER_SEC;
     double final1000_bubble = (despues1000_bubble - antes1000_bubble);
 
