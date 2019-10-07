@@ -7,6 +7,7 @@
 
 #include "SelectionSort.h"
 #include "InsertionSort.h"
+#include "BubbleSort.h"
 
 
 #include <iostream>
